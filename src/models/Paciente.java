@@ -87,7 +87,8 @@ public class Paciente extends Usuario<Paciente> implements Persistencia<Paciente
         super.guardar();
 
         // Luego, guardar la información específica del paciente
-        String sql = "INSERT INTO pacientes (id, fecha_nacimiento, peso_corporal, fecha_diagnostico) " + "VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO pacientes (id, fecha_nacimiento, peso_corporal, fecha_diagnostico) " +
+                "VALUES (?, ?, ?, ?)";
 
         try (Connection conn = getConexion(); PreparedStatement stmt = conn.prepareStatement(sql)) {
 

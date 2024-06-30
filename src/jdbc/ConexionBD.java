@@ -15,7 +15,6 @@ public class ConexionBD {
      * Instancia única de la clase {@link ConexionBD}.
      */
     private static ConexionBD instancia;
-
     /**
      * Conexión a la base de datos.
      */
@@ -30,7 +29,6 @@ public class ConexionBD {
     private ConexionBD() throws SQLException {
         crearConexion();
     }
-
     /**
      * Crea una nueva conexión a la base de datos.
      *
@@ -42,7 +40,6 @@ public class ConexionBD {
         String contrasena = "P4ssw0rd!";
         conexion = DriverManager.getConnection(url, usuario, contrasena);
     }
-
     /**
      * Obtiene la instancia única de la clase {@link ConexionBD}.
      * Si la instancia no existe o la conexión está cerrada, se crea una nueva instancia.
@@ -56,7 +53,6 @@ public class ConexionBD {
         }
         return instancia;
     }
-
     /**
      * Obtiene la conexión a la base de datos.
      * Si la conexión no existe o está cerrada, se crea una nueva conexión.

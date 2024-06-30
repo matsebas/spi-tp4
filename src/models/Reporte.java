@@ -50,7 +50,8 @@ public abstract class Reporte {
         this.fechaGeneracion = LocalDate.now();
 
         String sql = "INSERT INTO reportes (paciente_id, tipo_reporte, fecha_generacion, datos) VALUES (?, ?, ?, ?)";
-        try (Connection conn = ConexionBD.getInstancia().getConexion(); PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+        try (Connection conn = ConexionBD.getInstancia().getConexion();
+             PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             stmt.setLong(1, paciente.getId());
             stmt.setString(2, tipoReporte.name());
             stmt.setDate(3, java.sql.Date.valueOf(this.fechaGeneracion));
