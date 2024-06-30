@@ -51,7 +51,7 @@ Para ejecutar la aplicación, compila y ejecuta la clase `GlucoForecastApp`.
     - **Registrar datos:** Permite registrar datos de glucemia, carbohidratos y dosis de insulina.
     - **Visualizar resultado de HbA1c:** Muestra la última estimación de HbA1c calculada para el paciente.
     - **Generar Reportes:** Permite generar reportes personalizados (Rangos de Glucemia, HbA1c Histórico, Promedios de Glucemia).
-    - **Volver al menú de selección de paciente:** Regresa al menú de selección de pacientes.
+    - **Volver:** Regresa al menú de selección de pacientes.
 
 ## Contribuir
 
