@@ -31,7 +31,6 @@ public class GlucoForecastApp {
         this.visualizacionDatosView = new VisualizacionDatosView();
         try {
             this.pacientes = Paciente.listarTodos();
-            this.pacientes = Paciente.listarTodos();
         } catch (SQLException e) {
             System.out.println();
             System.out.println(UtilColores.RED_BOLD_BRIGHT + "Error al conectar con la base de datos: " + e.getMessage() + UtilColores.RESET);
